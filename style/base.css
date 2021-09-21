@@ -1,9 +1,11 @@
+
 /* Reset Css */
 @import "./reset.css";
 
+/* Components */
+@import "./style.css";
 
 /* Global Css */
 @import "./global.css";
 
-/* Components */
-@import "./style.css"
+

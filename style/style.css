@@ -1,6 +1,6 @@
 
 
-/*Superinfo*/
+/* Superinfo */
 .superinfo__bg {
   background: var(--blue);
   color: var(--white);
@@ -22,3 +22,142 @@
 .superinfo a {
   color: var(--white);
 }
+
+/* Menu */
+
+.menu__bg {
+  background: var(--light-blue);
+}
+
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: var(--white);
+}
+
+.menu__logo a {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.menu__nav ul {
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.menu__nav a {
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
+}
+
+.menu__nav a:hover {
+  color: var(--blue);
+}
+
+/* Introdução */
+
+.introducao {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+/* Sobre */
+
+.sobre {
+  border-top: 2px solid var(--light-blue);
+  border-bottom: 2px solid var(--light-blue);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre__info {
+  flex: 2 1 300px;
+  margin: 0 10px;
+}
+
+.sobre__info h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+.sobre__info p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  color: var(--gray-dark);
+}
+
+.sobre__img {
+  flex: 1;
+  margin: 0 10px;
+  min-width: 160px;
+}
+
+/* Produtos */
+
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.produtos h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 10px 60px 10px;
+}
+
+.produtos__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.produtos__item {
+  flex: 1;
+  margin: 10px;
+  min-width: 175px;
+}
+
+.produtos__item h2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--gray);
+  background: var(--gray-light);
+  padding: 60px 20px;
+}
+
+.purple {
+  border-top: 8px solid var(--purple);
+}
+
+.pink {
+  border-top: 8px solid var(--pink);
+}
+
+.blue {
+  border-top: 8px solid var(--sky-blue);
+}
+
+
+
+
+
+

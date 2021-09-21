@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
 :root  {
-  --font-family: "Nunito", Arial, Helvetica, sans-serif;
+  --font-family: "Nunito", Arial, Helvetica, sans-serif; 
+}
+
+html {
   --black: #222222;
   --blue: #122ab2;
   --white: #ffffff;
-
+  --light-blue: #2c70ff;
+  --gray-dark: #7c7c7c;
+  --gray: #a4a4a4;
+  --gray-light: #f7f7f7;
+  --purple: #ae81ff;
+  --pink: #f9265e;
+  --sky-blue: #66d9eb;
 }
 
 body {
