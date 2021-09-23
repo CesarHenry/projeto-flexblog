@@ -134,6 +134,11 @@
   flex: 1;
   margin: 10px;
   min-width: 175px;
+  transition: all 0.8s ease-in;
+}
+
+.produtos__item:hover {
+  transform: scale(1.1);
 }
 
 .produtos__item h2 {
@@ -156,6 +161,236 @@
   border-top: 8px solid var(--sky-blue);
 }
 
+
+/* Preço  */
+
+.preco {
+  background: var(--gray-light);
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.preco__item {
+  flex: 1;
+  border: 4px solid var(--white);
+  padding: 20px;
+  margin: 10px;
+  min-width: 260px; /** Sempre definir min-width menos que 280px **/
+}
+
+.preco__item h2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--gray);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.preco__item span {
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0 5px 0;
+  border-top: 4px solid var(--white);
+  border-bottom: 4px solid var(--white);  
+}
+
+.preco__item sup {
+  font-size: 1.5rem;  
+}
+
+.preco__item ul {
+  max-width: 300px;
+  margin: 20px auto;
+  font-size: 1.25em;  
+  font-style: italic;
+  color: var(--gray-dark);
+}
+
+.preco__item li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.preco__item li::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: var(--light-blue);
+  border-radius: 50%;
+}
+
+.preco__item a {
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid;
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.25em;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.preco__item a:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 800px) {
+  .preco {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .preco .preco__item:nth-child(3) {
+    order: -2;
+  }
+
+  .preco .preco__item:nth-child(2) {
+    order: -1;
+  }
+}
+
+/* Qualidade  */
+
+.qualidade {
+  max-width: 960px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qualidade__item {
+  flex: 1 1 300px;
+  margin: 20px 10px;
+}
+
+.qualidade__item h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.qualidade__item h2::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;  
+}
+
+.qualidade__item:nth-of-type(3n+1) h2::before {
+  background: var(--purple);  
+}
+
+.qualidade__item:nth-of-type(3n+2) h2::before {
+  background: var(--pink);  
+}
+
+.qualidade__item:nth-of-type(3n+3) h2::before {
+  background: var(--sky-blue);
+}
+
+.qualidade__item p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  color: var(--gray-dark);
+}
+
+/* Newsletter  */
+
+.newsletter {
+  background: var(--gray-light);
+  padding: 60px calc((100% - 960px) /2); /*Background 100% e dentro do container*/
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.newsletter__info {
+  flex: 1 1 240px;
+  margin: 0 10px;
+}
+
+.newsletter__info h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--gray);
+}
+
+.newsletter__info p {
+  font-size: 1.25em;
+  font-style: italic;
+  max-width: 230px;
+  color: var(--gray-dark);
+  margin-bottom: 10px;
+}
+
+.newsletter__form {
+  flex: 2 1 260px;
+  margin: 0 10px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter__form input {
+  flex: 3 1 200px;
+  font-size: 1.25em;
+  color: var(--gray-dark);
+  font-style: italic;
+  font-family: var(--font-family);
+  border: 4px solid var(--light-blue);
+  background: transparent;
+  padding: 15px 10px;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.newsletter__form button {
+  flex: 1 1 260px;
+  font-family: var(--font-family);
+  font-size: 2.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: var(--light-blue);
+  color: var(--white);
+  margin: 0px;
+  cursor: pointer;
+  border: 0px;
+  padding: 15px 10px;
+}
+
+@media (max-width: 600px) {
+  .newsletter__form button {
+    font-size: 1.5em;
+  }
+}
+
+/* Footer  */
+
+.footer {
+  display: flex;
+  background: var(--light-blue);
+  height: 200px;
+  align-items: center;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 2.25em;
+  color: var(--blue);
+}
 
 
 
