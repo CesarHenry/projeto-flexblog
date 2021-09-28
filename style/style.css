@@ -1,6 +1,6 @@
 
 
-/* Superinfo */
+/* SUPERINFO */
 .superinfo__bg {
   background: var(--blue);
   color: var(--white);
@@ -23,7 +23,7 @@
   color: var(--white);
 }
 
-/* Menu */
+/* MENU */
 
 .menu__bg {
   background: var(--light-blue);
@@ -64,7 +64,7 @@
   color: var(--blue);
 }
 
-/* Introdução */
+/* INTRODUÇÃO */
 
 .introducao {
   font-size: 3em;
@@ -75,7 +75,7 @@
   padding: 60px 10px;
 }
 
-/* Sobre */
+/* SOBRE */
 
 .sobre {
   border-top: 2px solid var(--light-blue);
@@ -111,7 +111,7 @@
   min-width: 160px;
 }
 
-/* Produtos */
+/* PRODUTOS */
 
 .produtos {
   max-width: 960px;
@@ -162,7 +162,7 @@
 }
 
 
-/* Preço  */
+/* PREÇO  */
 
 .preco {
   background: var(--gray-light);
@@ -260,7 +260,7 @@
   }
 }
 
-/* Qualidade  */
+/* QUALIDADE  */
 
 .qualidade {
   max-width: 960px;
@@ -307,7 +307,7 @@
   color: var(--gray-dark);
 }
 
-/* Newsletter  */
+/* NEWSLETTER  */
 
 .newsletter {
   background: var(--gray-light);
@@ -376,10 +376,11 @@
   }
 }
 
-/* Footer  */
+/* FOOTER  */
 
 .footer {
   display: flex;
+  flex-direction: column;
   background: var(--light-blue);
   height: 200px;
   align-items: center;
@@ -390,6 +391,7 @@
   text-align: center;
   font-size: 2.25em;
   color: var(--blue);
+  margin-top: 30px;
 }
 
 
